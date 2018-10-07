@@ -19,7 +19,7 @@ public class AutoconfOrderTest {
     @Test
     public void dbHealthIndicator() {
         // The assertion below will fail.
-        // Fix by removing @EnableAutoConfiguration from AutoconfOrderStarterConfiguration
+        // Fix by removing @EnableAutoConfiguration from MyStarterConfiguration
         assertNotNull(applicationContext.getBean("dbHealthIndicator"));
     }
 
