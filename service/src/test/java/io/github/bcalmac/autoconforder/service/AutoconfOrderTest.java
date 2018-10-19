@@ -1,6 +1,6 @@
 package io.github.bcalmac.autoconforder.service;
 
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,7 +20,6 @@ public class AutoconfOrderTest {
     public void dbHealthIndicator() {
         // The assertion below will fail.
         // Fix by removing @EnableAutoConfiguration from MyStarterConfiguration
-        assertNotNull(applicationContext.getBean("dbHealthIndicator"));
+        assertTrue(applicationContext.containsBean("dbHealthIndicator"));
     }
-
 }
